@@ -393,7 +393,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 60px;
+  padding: 0 160px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: center;
@@ -407,21 +407,24 @@
       padding: 0 10px; } }
 
 .cost {
-  font-size: 30px;
+  font-size: 42px;
   text-transform: uppercase; }
+  @media screen and (max-width: 1024px) {
+    .cost {
+      font-size: 30px; } }
   @media screen and (max-width: 480px) {
     .cost {
       font-size: 15px; } }
 
 .payinfo {
-  font-size: 11px;
+  font-size: 16px;
   text-transform: none;
-  width: 35%;
-  line-height: 1.2;
-  text-align: justify; }
+  width: 60%;
+  line-height: 1.2; }
   @media screen and (max-width: 1024px) {
     .payinfo {
-      width: 60%; } }
+      width: 60%;
+      font-size: 13px; } }
   @media screen and (max-width: 480px) {
     .payinfo {
       width: 70%;
@@ -713,7 +716,7 @@
 
 .line {
   margin: 0;
-  border: 7px solid #8C0606; }
+  border: 7px solid #314d63; }
 
 .benefit {
   background-color: white;
@@ -839,6 +842,16 @@
 .footer__contacts {
   text-align: right;
   width: 48%; }
+
+.information__item--cost {
+  text-transform: uppercase;
+  color: #314d63;
+  font-family: Raleway-Bold;
+  font-size: 34px;
+  margin-top: 20px; }
+  @media screen and (max-width: 1024px) {
+    .information__item--cost {
+      font-size: 26px; } }
 
 #mlb2-7600364,
 #mlb2-7600364 *,

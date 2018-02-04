@@ -59,7 +59,7 @@
     background-color: #314d63;
     color: white;
     display: flex;
-    padding: 0 60px;
+    padding: 0 160px;
     justify-content: space-around;
     align-items: center;
     @include tablets {
@@ -70,20 +70,23 @@
     }
 }
 .cost {
-    font-size: 30px;
+    font-size: 42px;
     text-transform: uppercase;
+    @include tablets {
+        font-size: 30px;
+    }
     @include phones {
         font-size: 15px;
     }
 }
 .payinfo {
-    font-size: 11px;
+    font-size: 16px;
     text-transform: none;
-    width: 35%;
+    width: 60%;
     line-height: 1.2;
-    text-align: justify;
     @include tablets {
         width: 60%;
+        font-size: 13px;
     }
     @include phones {
         width: 70%;

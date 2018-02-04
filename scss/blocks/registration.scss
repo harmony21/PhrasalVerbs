@@ -43,3 +43,15 @@
     text-align: right;
     width: 48%;
 }
+.information__item {
+    &--cost {
+        text-transform: uppercase;
+        color: #314d63;
+        font-family: Raleway-Bold;
+        font-size: 34px;
+        margin-top: 20px;
+        @include tablets {
+            font-size: 26px;
+        }
+    }
+}
