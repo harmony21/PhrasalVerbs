@@ -1,0 +1,150 @@
+.welcome {
+    background: url("..//img/phrasal verbs.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    font-family: Raleway-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include phones {
+        min-height: 0;
+    }
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    @include tablets {
+        padding: 10px 25px;
+    }
+    @include phones {
+        padding: 10px 20px;
+    }
+}
+.logo {
+    width: 200px;
+    @include phones {
+        width: 100px;
+    }
+}
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #314d63;
+    @include phones {
+        font-size: 14px;
+    }
+    &:hover {
+        cursor: pointer;
+        color: #8C0606;
+    }
+}
+.author-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px 0 50px;
+    align-items: flex-end;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    @include tablets {
+        font-size: 26px;
+        padding: 40px 25px 0 25px;
+    }
+    @include phones {
+        font-size: 16px;
+        padding: 40px 20px 0 20px;
+    }
+}
+.author-date__date {
+    color: #C0392B;
+    font-size: 50px;
+    font-family: Raleway-Bold;
+    @include tablets {
+        font-size: 38px;
+    }
+    @include phones {
+        font-size: 24px;
+    }
+}
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    @include tablets {
+        margin-right: 25px;
+    }
+    @include phones {
+        flex-direction: column;
+        margin-right: 0;
+    }
+}
+.information__online {
+    margin: 20px 0 10px 0;
+    padding-left: 50px;
+    font-size: 44px;
+    font-family: Raleway-Bold;
+    text-transform: uppercase;
+    @include tablets {
+        font-size: 24px;
+        padding-left: 25px;
+    }
+    @include phones {
+        text-align: center;
+        padding-left: 0;
+        font-size: 24px;
+    }
+}
+.information__title {
+    margin: 0;
+    padding-left: 50px;
+    color: #C0392B;
+    text-transform: uppercase;
+    font-family: Raleway-Bold;
+    font-size: 84px;
+    margin-bottom: 20px;
+    letter-spacing: 2.5px;
+    @include tablets {
+        font-size: 42px;
+        padding-left: 25px;
+    }
+    @include phones {
+        text-align: center;
+        padding-left: 0;
+        font-size: 38px;
+    }
+}
+.information__list {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px;
+    font-size: 26px;
+    line-height: 1.5;
+    @include tablets {
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    @include phones {
+        text-align: center;
+        margin-left: 0;
+        font-size: 14px;
+    }
+    &.reg {
+        margin: 0 0 0 50px;
+        @include phones {
+            margin-left: 0;
+        }
+    }
+}
+.infoline {
+    margin-left: 50px;
+    width: 40%;
+    @include phones {
+        margin-left: 0;
+        width: 70%;
+        margin: 0 auto;
+    }
+}

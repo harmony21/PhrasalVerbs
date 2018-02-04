@@ -1,0 +1,165 @@
+.advantages {
+    background-color: white;
+    width: 100%;
+    background-size: cover;
+    font-family: Raleway-Regular;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 115px;
+    &.left {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        @include tablets {
+            width: 100%;
+        }
+    }
+    @include tablets {
+        width: 100%;
+    }
+    @include phones {
+        flex-direction: column;
+    }
+}
+.about__title {
+    text-transform: uppercase;
+    font-size: 56px;
+    margin: 0;
+    padding: 20px 0 0 0;
+    margin-left: 162px;
+    @include tablets {
+        font-size: 42px;
+        margin-left: 60px;
+    }
+    @include phones {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0;
+        padding: 30px 0 0 0;
+    }
+}
+.about__list {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 2;
+    margin-top: 20px;
+    margin-left: 115px;
+    @include tablets {
+        font-size: 18px;
+        line-height: 2.5;
+        padding: 0 0 20px 0;
+        margin-left: 10px;
+        width: 100%;
+    }
+    @include phones {
+        font-size: 18px;
+        margin-top: 0;
+        padding: 20px 0 0 0;
+        margin-left: 0;
+    }
+}
+.about__item {
+    list-style: none;
+    padding-left: 50px;
+    text-transform: uppercase;
+    @include phones {
+        text-transform: none;
+        padding-left: 40px;
+    }
+    &.notepad {
+        background: url("..//img/notepad.png") no-repeat 0 13px; 
+        @include tablets {
+            background: url("..//img/notepad.png") no-repeat 0 15px; 
+        }
+        @include phones {
+            background: url("..//img/notepad.png") no-repeat 0 3px; 
+        }
+    }
+    &.search {
+        background: url("..//img/search.png") no-repeat 0 14px; 
+        @include tablets {
+            background: url("..//img/search.png") no-repeat 0 15px; 
+        }
+        @include phones {
+            background: url("..//img/search.png") no-repeat 0 7px; 
+        }
+    }
+    &.cloud {
+        background: url("..//img/cloud.png") no-repeat 0 11px; 
+        @include tablets {
+            background: url("..//img/cloud.png") no-repeat 0 13px; 
+        }
+        @include phones {
+            background: url("..//img/cloud.png") no-repeat 0 6px; 
+        }
+    }
+    &.documents {
+        background: url("..//img/documents.png") no-repeat 0 12px; 
+        @include tablets {
+            background: url("..//img/documents.png") no-repeat 0 14px; 
+        }
+        @include phones {
+            background: url("..//img/documents.png") no-repeat 0 6px; 
+        }
+    }
+    &.messaging {
+        background: url("..//img/messaging.png") no-repeat 0 12px;
+        @include tablets {
+            background: url("..//img/messaging.png") no-repeat 0 14px; 
+        }
+        @include phones {
+            background: url("..//img/messaging.png") no-repeat 0 11px; 
+        } 
+    }
+    &.administrative {
+        background: url("..//img/administrative.png") no-repeat 0 9px; 
+        @include tablets {
+            background: url("..//img/administrative.png") no-repeat 0 10px; 
+        } 
+        @include phones {
+            background: url("..//img/administrative.png") no-repeat 0 8px; 
+        } 
+    }
+}
+.top {
+    width: 660px;
+    margin-left: 44px;
+    @include tablets {
+        margin-left: 0;
+        margin: 20px auto 0 auto;
+    }
+    @include phones {
+        display: none;
+    }
+}
+.about__cost {
+    margin-left: 115px;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #314d63;
+    padding: 20px 0;
+    font-family: Raleway-Bold;
+    @include tablets {
+        margin-left: 0;
+        width: 100vw;
+        text-align: center;
+    }
+    @include phones {
+        font-size: 24px;
+    }
+    &.reg {
+        margin-left: 50px;
+        @include tablets {
+            margin-left: 0;
+        }
+    }
+}

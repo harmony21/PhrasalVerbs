@@ -1,0 +1,45 @@
+.registration {
+    background: url("..//img/phrasal verbs.png") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: Raleway-Regular;
+    color: white;
+    display: flex;
+    color: #2B2B2B;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+}
+.footer {
+    width: 100%;
+    background-color: #f7f8fa;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.7;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    @include tablets {
+        font-size: 11px;
+    }
+    @include phones {
+        font-size: 7px;
+        padding: 0;
+    }
+}
+.footer__details {
+    width: 48%;
+    p {
+        margin: 0;
+        padding: 10px;
+        @include phones {
+            padding: 0;
+        }
+    }
+}
+.footer__contacts {
+    text-align: right;
+    width: 48%;
+}

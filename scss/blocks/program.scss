@@ -1,0 +1,114 @@
+.program {
+    background: url("..//img/snow-micro-circles.png") center center;
+    width: 100%;
+    font-family: Raleway-Regular;
+    color: white;
+    display: flex;
+    color: #2B2B2B;
+    flex-direction: column;
+    @include tablets {
+        min-height: 0;
+    }
+}
+.program__title {
+    margin: 0;
+    color: #8C0606;
+    text-transform: uppercase;
+    font-family: Raleway-Bold;
+    font-size: 50px;
+    margin-left: 40px;
+    text-align: center;
+    margin-top: 40px;
+    @include phones {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+.program__list {
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    @include tablets {
+        margin-left: 0;
+        padding-left: 40px;
+    }
+    @include phones {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+.program__item {
+    list-style: none;
+    background: url("..//img/arrows.png") no-repeat 0 12px;
+    padding-left: 40px;
+    font-size: 28px;
+    line-height: 1.7;
+    @include tablets {
+        font-size: 24px;
+    }
+    @include phones {
+        font-size: 18px;
+        padding-left: 30px;
+        background: url("..//img/arrows.png") no-repeat 0 4px;
+    }
+}
+.program__pay {
+    background-color: #314d63;
+    color: white;
+    display: flex;
+    padding: 0 60px;
+    justify-content: space-around;
+    align-items: center;
+    @include tablets {
+        padding: 0 15px;
+    }
+    @include phones {
+        padding: 0 10px;
+    }
+}
+.cost {
+    font-size: 30px;
+    text-transform: uppercase;
+    @include phones {
+        font-size: 15px;
+    }
+}
+.payinfo {
+    font-size: 11px;
+    text-transform: none;
+    width: 35%;
+    line-height: 1.2;
+    text-align: justify;
+    @include tablets {
+        width: 60%;
+    }
+    @include phones {
+        width: 70%;
+        font-size: 8px;
+        margin-right: 15px;
+    }
+}
+.button {
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    &:hover {
+        background-color: #FFF0F5;
+    }
+}
+.paylink {
+    text-decoration: none;
+    font-family: Raleway-Regular;
+    color: #314d63;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    @include phones {
+        font-size: 10px;
+        padding: 0;
+    }
+}

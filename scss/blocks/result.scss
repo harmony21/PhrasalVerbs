@@ -1,0 +1,80 @@
+.result {
+    background: url("..//img/snow-micro-circles.png") center center;
+    width: 100%;
+    font-family: Raleway-Regular;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+}
+.result__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    @include phones {
+        padding: 10px;
+    }
+}
+.date {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: justify;
+    letter-spacing: 4.5px;
+    color: #8C0606;
+    font-family: Raleway-Bold;
+    @include tablets {
+        font-size: 30px;
+    }
+    @include phones {
+        font-size: 16px;
+        letter-spacing: 3.5px;
+    }
+}
+.time {
+    font-size: 22px;
+    @include tablets {
+        font-size: 18px;
+    }
+    @include phones {
+        font-size: 10px;
+    }
+}
+.result__header--right {
+    text-align: left;
+    font-size: 72px;
+    color: #8C0606;
+    font-family: Raleway-Bold;
+    @include tablets {
+        font-size: 54px;
+    }
+    @include phones {
+        font-size: 26px;
+    }
+}
+.result__info {
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 34px;
+    padding: 50px 0;
+    text-transform: uppercase;
+    line-height: 1.4;
+    @include tablets {
+        font-size: 30px; 
+        padding: 20px 10px;
+    }
+    @include phones {
+        font-size: 20px;
+    }
+    br {
+        @include tablets {
+            display: none;
+        }
+    }
+}
+.bold {
+    font-family: Raleway-Bold;
+}
+.line {
+    margin: 0;
+    border: 7px solid #8C0606;
+}
